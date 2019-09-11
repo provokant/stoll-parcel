@@ -15,7 +15,7 @@
 }
 
 section {
-  @apply flex flex-col py-24 mt-0 bg-white; // sticky top-0
+  @apply flex flex-col py-24 mt-0 bg-white;
 
   min-height: var(--app-height);
 
@@ -29,7 +29,6 @@ section {
         @apply bg-cover opacity-0 bg-no-repeat bg-center w-full h-full absolute inset-0;
 
         mix-blend-mode: lighten;
-        // transition: 600ms;
 
         &.--active {
           @apply opacity-50;
@@ -45,26 +44,20 @@ section {
       h1 {
         @apply relative text-r3 uppercase text-secondary-100 font-normal whitespace-no-wrap;
 
-        // text-shadow: 4px 3px 0px theme('colors.secondary.600');
-
-        // @screen lg {
-        //   text-shadow: 10px 8px 0px theme('colors.secondary.600');
-        // }
-
         &:before {
-          @apply fixed text-secondary-600;
+          @apply fixed text-white opacity-50;
 
           content: 'Paula Stoll';
-          margin: 3px -4px -3px 4px;
-          mix-blend-mode: lighten;
+          // margin: 3px -4px -3px 4px;
+          mix-blend-mode: overlay;
 
-          @screen md {
-            margin: 5px -7px -5px 7px;
-          }
+          // @screen md {
+          //   margin: 5px -7px -5px 7px;
+          // }
 
-          @screen xl {
-            margin: 8px -10px -8px 10px;
-          }
+          // @screen xl {
+          //   margin: 8px -10px -8px 10px;
+          // }
         }
       }
     
@@ -83,7 +76,7 @@ section {
   }
 
   &.imprint {
-    @apply bg-secondary-700 text-white pt-0;
+    @apply bg-gray-900 text-white pt-0;
 
     a {
       &:hover,
