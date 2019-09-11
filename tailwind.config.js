@@ -6,7 +6,7 @@ module.exports = {
     },
     colors: {
       gray: colors.gray,
-      primary: colors.indigo,
+      primary: colors.purple,
       secondary: colors.red,
       black: '#2D2D2A',
       white: colors.white
@@ -21,7 +21,7 @@ module.exports = {
       '4xl': '5rem',
       'r1': '1vw',
       'r2': '4vw',
-      'r3': '9vw'
+      'r3': '7vw'
     },
     opacity: {
       ...opacity,
