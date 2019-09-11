@@ -1,0 +1,31 @@
+{
+  "name": "nls-parcel-uno-stoll",
+  "version": "1.0.0-0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --open",
+    "host": "parcel index.html --open --hmr-hostname 0.0.0.0:1234",
+    "build": "parcel build index.html"
+  },
+  "author": "Michael Werner Czechowski <mail@dailysh.it>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "lodash": "^4.17.15",
+    "parcel-plugin-static-files-copy": "^2.2.1",
+    "posthtml-img-autosize": "^0.1.4",
+    "posthtml-include": "^1.2.0",
+    "sass": "^1.16.0",
+    "tailwindcss": "^1.0.5",
+    "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.10.3"
+  },
+  "staticFiles": {
+    "staticPath": "src/static",
+    "watcherGlob": "**"
+  }
+}

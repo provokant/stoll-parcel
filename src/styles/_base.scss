@@ -1,0 +1,144 @@
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Hammersmith+One&display=swap');
+
+html, body {
+  @apply font-sans m-0 p-0;
+}
+
+body {
+  @apply text-lg;
+
+  min-height: 100.01%;
+  min-height: var(--app-height);
+}
+
+h1, h2, h3 {
+  // @apply font-display;
+}
+
+h1 {
+  @apply mb-0 font-display;
+}
+
+h2, h3, h4 {
+  @apply font-bold mb-2 leading-tight tracking-wide;
+}
+
+h2 {
+
+  @screen md {
+    @apply w-5/6;
+  }
+
+  @screen lg {
+    @apply w-3/4;
+  }
+
+  > span {
+    @apply relative;
+
+    &:before {
+      @apply absolute;
+  
+      content: '';
+      height: 33%;
+      left: -0.5rem;
+      right: -0.5rem;
+      bottom: 10%;
+      background-color: $primary-color-lighter;
+      z-index: -1;
+    }
+  }
+}
+
+h3 {
+  @apply text-lg mt-20;
+
+  > span {
+    @apply relative;
+
+    &:before {
+      @apply absolute;
+  
+      content: '';
+      height: 33%;
+      left: -0.2rem;
+      right: -0.2rem;
+      bottom: 10%;
+      background-color: $secondary-color-lighter;
+      z-index: -1;
+    }
+  }
+
+  small {
+    @apply block mt-3 text-sm text-gray-800 uppercase;
+  }
+}
+
+h4 {
+  @apply text-xl;
+}
+
+p {
+  @apply mb-3 leading-normal font-normal;
+}
+
+a {
+  @apply underline cursor-pointer;
+
+  text-decoration-color: $primary-color-lighter;
+  transition: all 160ms;
+
+  &:hover,
+  &:focus {
+    @apply no-underline;
+
+    color: $primary-color-darker;
+  }
+
+  &:active {
+    color: $primary-color-darker;
+  }
+
+  &[href^=tel] {
+    @apply whitespace-no-wrap;
+  }
+}
+
+blockquote {
+  @apply my-12 w-4/5 text-xl italic;
+
+  padding-left: 20%;
+
+  p {
+    @apply text-left font-serif;
+  }
+
+  small {
+    @apply text-sm;
+  }
+}
+
+article {
+
+  footer {
+    @apply fixed bottom-0 left-0 right-0 flex justify-between p-5 text-sm bg-white;
+
+    ul {
+      @apply flex flex-row;
+
+      li {
+        @apply pl-2;
+      }
+    }
+
+    .profiles {
+      @apply flex;
+    }
+
+    .copyright {
+      @apply text-right;
+    }
+  }
+}

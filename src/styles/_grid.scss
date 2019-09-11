@@ -1,0 +1,15 @@
+.grid {
+  @apply flex flex-1 flex-wrap mt-8;
+
+  & > * {
+    @apply w-full;
+
+    @screen md {
+      @apply w-1/3;
+    }
+  }
+
+  img {
+    @apply h-auto;
+  }
+}

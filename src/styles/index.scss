@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'variables';
+@import 'base';
+
+@import 'cards';
+@import 'grid';
+@import 'list';
+@import 'picture';
+
+:root {
+  --app-height: 100vh;
+}
+
+section {
+  @apply flex flex-col py-24 mt-0 bg-white; // sticky top-0
+
+  min-height: var(--app-height);
+
+  &.first-impression {
+    @apply bg-primary-900 overflow-hidden justify-center;
+
+    .display {
+      @apply flex text-center items-center flex-col justify-center;
+    
+      transition: all 20ms;
+    
+      h1 {
+        @apply relative text-r3 uppercase text-secondary-100 font-normal;
+
+        text-shadow: 5px 3px 0px theme('colors.secondary.600');
+      }
+    
+      p {
+        @apply mt-8 -mr-8 text-r1 uppercase font-hairline tracking-wider text-primary-200;
+    
+        margin-right: calc(-1 * theme('letterSpacing.wider'));
+    
+        @screen lg {
+          @apply tracking-widest;
+    
+          margin-right: calc(-1 * theme('letterSpacing.widest'));
+        }
+      }
+    }
+  }
+
+  &.imprint {
+    @apply bg-secondary-600 text-white pt-0;
+
+    a {
+      &:hover,
+      &:focus {
+        @apply no-underline;
+    
+        color: $primary-color;
+      }
+    
+      &:active {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+
+
+.container {
+  @apply mx-auto px-10;
+}

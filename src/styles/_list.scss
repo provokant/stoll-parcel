@@ -1,0 +1,29 @@
+@import 'variables';
+
+.list {
+
+  &.--bullets {
+
+    li {
+      @apply pl-10 relative;
+
+      &:before {
+        @apply absolute inset-y-0 flex justify-center;
+
+        content: '–';
+        left: 1rem;
+        color: $primary-color;
+      }
+    }
+  }
+
+  &.--words {
+    @apply font-normal mt-8;
+
+    i {
+      @apply mr-1 font-serif;
+      
+      color: $primary-color;
+    }
+  }
+}
