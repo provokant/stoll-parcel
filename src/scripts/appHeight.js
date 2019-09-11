@@ -1,8 +1,8 @@
-export const appHeight = () => {
-  const doc = document.documentElement
-  doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+export default class AppHeight {
+  constructor() {
+    const doc = document.documentElement
+    window.addEventListener('resize', () => {
+      doc.style.setProperty('--app-height', `${window.innerHeight}px`)
+    })
+  }
 }
-
-window.addEventListener('resize', appHeight)
-
-appHeight()

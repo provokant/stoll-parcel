@@ -20,7 +20,22 @@ section {
   min-height: var(--app-height);
 
   &.first-impression {
-    @apply bg-primary-900 overflow-hidden justify-center;
+    @apply bg-primary-900 overflow-hidden justify-center relative;
+
+    .bg {
+      @apply absolute inset-0;
+
+      &__inner {
+        @apply bg-cover opacity-0 bg-no-repeat bg-center w-full h-full absolute inset-0;
+
+        mix-blend-mode: lighten;
+        // transition: 600ms;
+
+        &.--active {
+          @apply opacity-50;
+        }
+      }
+    }
 
     .display {
       @apply flex text-center items-center flex-col justify-center;
