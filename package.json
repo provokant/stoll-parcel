@@ -23,7 +23,8 @@
     "typescript": "^3.2.1"
   },
   "dependencies": {
-    "parcel-bundler": "^1.10.3"
+    "parcel-bundler": "^1.10.3",
+    "sharp": "^0.23.0"
   },
   "staticFiles": {
     "staticPath": "src/static",
@@ -32,16 +33,16 @@
   "srcSetAssets": {
     "assetsPath": "./src/assets/images/",
     "breakpoints": {
-      "640w": { 
+      "640w": {
         "width": 640
       },
-      "768w": { 
+      "768w": {
         "width": 768
       },
-      "1024w": { 
+      "1024w": {
         "width": 1024
       },
-      "1280w": { 
+      "1280w": {
         "width": 1280
       }
     },
