@@ -31,7 +31,7 @@ module.exports = {
     fontFamily: {
       ...fontFamily,
       sans: ['Open Sans', ...fontFamily.sans],
-      display: ['Hammersmith One', ...fontFamily.sans],
+      display: ['Be Vietnam', ...fontFamily.sans],
     },
     letterSpacing: {
       ...letterSpacing,

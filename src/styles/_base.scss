@@ -1,6 +1,6 @@
 @import 'variables';
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Be+Vietnam:700,800&display=swap');
 
 html, body {
   @apply font-sans m-0 p-0;
@@ -138,7 +138,11 @@ article {
     }
 
     .copyright {
-      @apply text-right;
+      @apply text-right hidden;
+
+      @screen lg {
+        @apply inline-block;
+      }
     }
   }
 }

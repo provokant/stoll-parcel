@@ -48,16 +48,7 @@ section {
           @apply fixed text-white opacity-50;
 
           content: 'Paula Stoll';
-          // margin: 3px -4px -3px 4px;
           mix-blend-mode: overlay;
-
-          // @screen md {
-          //   margin: 5px -7px -5px 7px;
-          // }
-
-          // @screen xl {
-          //   margin: 8px -10px -8px 10px;
-          // }
         }
       }
     
@@ -92,8 +83,6 @@ section {
     }
   }
 }
-
-
 
 .container {
   @apply mx-auto px-10;
