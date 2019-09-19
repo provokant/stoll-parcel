@@ -1,8 +1,29 @@
 <section class="first-impression">
   <div class="bg">
-    <div class="bg__inner" style="background-image: url('./src/assets/images/roland-1.png')"></div>
-    <div class="bg__inner --active" style="background-image: url('./src/assets/images/roland-2.png')"></div>
-    <div class="bg__inner" style="background-image: url('./src/assets/images/roland-3.png')"></div>
+    <div class="bg__inner">
+      <picture>
+        <source media="(max-width: 640px)" srcset="./src/assets/images/roland-1@640w.png">
+        <source media="(max-width: 768px)" srcset="./src/assets/images/roland-1@768w.png">
+        <source media="(max-width: 1024px)" srcset="./src/assets/images/roland-1@1024w.png">
+        <img src="./src/assets/images/roland-1.png" data-preload>
+      </picture>
+    </div>
+    <div class="bg__inner --active">
+      <picture>
+        <source media="(max-width: 640px)" srcset="./src/assets/images/roland-2@640w.png">
+        <source media="(max-width: 768px)" srcset="./src/assets/images/roland-2@768w.png">
+        <source media="(max-width: 1024px)" srcset="./src/assets/images/roland-2@1024w.png">
+        <img src="./src/assets/images/roland-2.png" data-preload>
+      </picture>
+    </div>
+    <div class="bg__inner">
+      <picture>
+        <source media="(max-width: 640px)" srcset="./src/assets/images/roland-3@640w.png">
+        <source media="(max-width: 768px)" srcset="./src/assets/images/roland-3@768w.png">
+        <source media="(max-width: 1024px)" srcset="./src/assets/images/roland-3@1024w.png">
+        <img src="./src/assets/images/roland-3.png" data-preload>
+      </picture>
+    </div>
   </div>
   <div class="container">
     <div class="display" id="display">
